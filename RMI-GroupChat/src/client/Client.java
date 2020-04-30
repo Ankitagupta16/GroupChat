@@ -81,7 +81,7 @@ public class Client extends UnicastRemoteObject implements ClientIF {
 	@Override
 	public void updateUserList(String[] currentUsers) throws RemoteException {
 
-		if(currentUsers.length < 2){
+		if(currentUsers.length < 3){
 			chatGUI.privateMsgButton.setEnabled(false);
 		}
 		chatGUI.userPanel.remove(chatGUI.clientPanel);
